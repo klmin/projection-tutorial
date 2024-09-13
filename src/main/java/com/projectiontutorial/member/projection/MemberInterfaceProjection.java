@@ -1,4 +1,4 @@
-package com.restapi.member.projection;
+package com.projectiontutorial.member.projection;
 
 
 public interface MemberInterfaceProjection {

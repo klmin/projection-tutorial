@@ -1,6 +1,6 @@
-package com.restapi.team.entity;
+package com.projectiontutorial.team.entity;
 
-import com.restapi.member.entity.Member;
+import com.projectiontutorial.member.entity.Member;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -12,7 +12,7 @@ import java.util.List;
 @Setter
 @Entity
 @Table
-@NoArgsConstructor(access=AccessLevel.PROTECTED)
+@NoArgsConstructor(access= AccessLevel.PROTECTED)
 @AllArgsConstructor
 @Builder
 @SequenceGenerator(name="TEAM_SEQ_GENERATOR", sequenceName="TEAM_SEQ", initialValue=1, allocationSize=50)
@@ -28,7 +28,7 @@ public class Team {
     @Column
     private Integer teamNum;
 
-    @OneToMany(mappedBy = "team")
+    @OneToMany(mappedBy = "team", fetch = FetchType.LAZY)
     @Builder.Default
     private List<Member> members = new ArrayList<>();
 

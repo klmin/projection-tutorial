@@ -1,7 +1,7 @@
-package com.restapi.member.entity;
+package com.projectiontutorial.member.entity;
 
 
-import com.restapi.team.entity.Team;
+import com.projectiontutorial.team.entity.Team;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -11,7 +11,7 @@ import lombok.*;
 @Getter
 @Setter
 @Builder
-@NoArgsConstructor(access=AccessLevel.PROTECTED)
+@NoArgsConstructor(access= AccessLevel.PROTECTED)
 @AllArgsConstructor
 @SequenceGenerator(name="MEMBER_SEQ_GENERATOR", sequenceName="MEMBER_SEQ", initialValue=1, allocationSize=50)
 public class Member {

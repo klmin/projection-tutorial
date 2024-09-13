@@ -1,6 +1,6 @@
-package com.restapi.member.repository;
+package com.projectiontutorial.member.repository;
 
-import com.restapi.member.entity.Member;
+import com.projectiontutorial.member.entity.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

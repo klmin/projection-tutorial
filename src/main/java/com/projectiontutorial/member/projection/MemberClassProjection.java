@@ -1,4 +1,4 @@
-package com.restapi.member.projection;
+package com.projectiontutorial.member.projection;
 
 
 import lombok.Getter;
@@ -7,10 +7,10 @@ import lombok.Getter;
 public class MemberClassProjection
 
 {
-    Long memberId;
-    String name;
-    Long teamId;
-    String teamName;
+    private Long memberId;
+    private String name;
+    private Long teamId;
+    private String teamName;
 
     public MemberClassProjection(Long memberId, String name, Long teamTeamId, String teamTeamName){
         this.memberId = memberId;

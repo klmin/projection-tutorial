@@ -1,14 +1,10 @@
-package com.restapi.team.projection;
-
-import java.util.List;
+package com.projectiontutorial.team.projection;
 
 public record TeamRecordProjection(
     Long teamId,
     String teamName,
-    Integer teamNum,
     Long membersMemberId,
-    String membersName,
-    Integer membersAge
+    String membersName
 
 ) {
 }

@@ -1,14 +1,21 @@
 package com.projectiontutorial.team.projection;
 
-import java.util.List;
+import lombok.Getter;
 
-public record TeamRecordProjection2(
-    Long teamId,
-    String teamName,
-    Integer teamNum,
-    List<Long> membersMemberId,
-    List<String> membersName,
-    List<Integer> membersAge
+@Getter
+public class TeamClassProjection{
+    private Long teamId;
+    private String teamName;
+    private Long memberId;
+    private String memberName;
 
-) {
+    public TeamClassProjection(Long teamId, String teamName, Long membersMemberId, String membersName) {
+        this.teamId = teamId;
+        this.teamName = teamName;
+        this.memberId = membersMemberId;
+        this.memberName = membersName;
+    }
+
+
+
 }

@@ -1,6 +1,6 @@
-package com.restapi.team.repository;
+package com.projectiontutorial.team.repository;
 
-import com.restapi.team.entity.Team;
+import com.projectiontutorial.team.entity.Team;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
